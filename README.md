@@ -3,21 +3,26 @@ AI/ML/GenAI Applications
 
 ## AI Agents -
 
-| ID  | App | Short Details | Tools/Tech |
-| --- | --- | ------------- | ---------- |
-| 1.  | app1 | Local AI Agent | Ollama, Langchain, RAG |
-| | | | |
+| ID  | App | Short Details | Tools/Tech | Ref  | Comments |
+| --- | --- | ------------- | ---------- | :--- | -------- |
+| 1.  | app1 | Learning Docs | DE, DA, DS | Nil | Nil |
+| 2.  | app2 | Local AI Agent | Ollama, Langchain, RAG | [click here](apps\app2\App_Info.md) | NIL |
+| 3. | | | | | |
 
 ## How To Use (Windows Machine):
 
 1. Clone the repo from Github:
     ```shell
-    git clone tdf_ai
+    git clone  git clone https://github.com/Indra-Learn/tdf_ai.git
     ```
 2. Execute below code:
     ```shell
     cd tdf_ai
 
-    # create python virtual environment if not exists
+    # create python virtual environment if not exists and activate it
     python -m venv .venv
+    .//.venv//Scripts//activate
+
+    # install the required python packages
+    pip install -r ./requirements.txt
     ```
