@@ -1,0 +1,65 @@
+
+[
+    {
+        "symbol": "PE",
+        "short_name": "Price-to-Earnings",
+        "full_name": "Price-to-Earnings (P/E)",
+        "short_description": "measures a company's current share price in relation to its earnings per share (EPS)",
+        "full_description": "The annualised gross dividend per share for the last reported period, expressed as a percentage of the latest share price",
+        "calculation": "P/E Ratio = Market Price per Share / Earnings Per Share",
+        "example": [],
+        "extra": ["indicating how much investors are willing to pay for each unit of a company's earnings",
+                    "A high P/E suggests investors expect high future growth",
+                    "while a low P/E may indicate a stock is undervalued or has lower growth prospects"]
+    },
+    {
+        "symbol": "PB",
+        "short_name": "",
+        "full_name": "",
+        "short_description": "",
+        "full_description": "",
+        "calculation": "",
+        "example": [],
+        "extra": []
+    },
+    {
+        "symbol": "EPS",
+        "short_name": "Earnings Per Share",
+        "full_name": "",
+        "short_description": "",
+        "full_description": "",
+        "calculation": "",
+        "example": [],
+        "extra": []
+    },
+    {
+        "symbol": "PEG",
+        "short_name": "Price/Earnings to Growth ratio",
+        "full_name": "",
+        "short_description": "",
+        "full_description": "",
+        "calculation": "",
+        "example": [],
+        "extra": []
+    },
+    {
+        "symbol": "DY",
+        "short_name": "Div yield",
+        "full_name": "Div yield (%)",
+        "short_description": "The annualised gross dividend per share",
+        "full_description": "The annualised gross dividend per share for the last reported period, expressed as a percentage of the latest share price",
+        "calculation": "Div yield (%) = 100 * Gross dividend per share (net dividend *100/90)/latest share price",
+        "example": [],
+        "extra": []
+    },
+    {
+        "symbol": "",
+        "short_name": "",
+        "full_name": "",
+        "short_description": "",
+        "full_description": "",
+        "calculation": "",
+        "example": [],
+        "extra": []
+    }
+]

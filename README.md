@@ -5,9 +5,10 @@ AI/ML/GenAI Applications
 
 | ID  | App | Short Details | Tools/Tech | Ref  | Comments |
 | --- | --- | ------------- | ---------- | :--- | -------- |
-| 1.  | app1 | Learning Docs | DE, DA, DS | Nil | Nil |
-| 2.  | app2 | Local AI Agent | Ollama, Langchain, RAG | [click here](apps\app2\App_Info.md) | NIL |
+| 1.  | app_learning | Learning Docs | DE, DA, DS | Nil | Nil |
+| 2.  | app_genai_chatbot1 | Local AI Agent | Ollama, Langchain, RAG | [click here](apps\app2\App_Info.md) | NIL |
 | 3. | | | | | |
+
 
 ## How To Use (Windows Machine):
 

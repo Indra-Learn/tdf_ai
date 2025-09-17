@@ -11,8 +11,15 @@
 # Extras:
 
 1. [tavily](https://app.tavily.com/home)
-yfinance for retrieving stock data
-quantmod for time series analysis
-ggplot2 for visualization
-dplyr for data manipulation
-tidyr for tidying data
+2. yfinance for retrieving stock data
+3. quantmod for time series analysis
+4. ggplot2 for visualization
+5. dplyr for data manipulation
+6. tidyr for tidying data
+
+
+# GenAI
+
+| id  | GenAI Name | Company   | Guide Links | Console Links |
+| --- | :--------: | :-------: | :---------: | :-----------: |
+| 1.  | Claude | Anthropic | [API Guide](https://docs.anthropic.com/en/docs/intro) | [Console](https://console.anthropic.com/dashboard) |
