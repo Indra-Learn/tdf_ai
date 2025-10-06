@@ -5,7 +5,8 @@
 | ID  | Product Name | Billing | Product Details | Docs | Community |
 | --- | ------------ | ------- | --------------- | ---- | --------- |
 | 1. | [AWS](https://us-east-1.console.aws.amazon.com/) | [Billing]() | [AWS Products](https://aws.amazon.com/campaigns/aws-cloudserver/)</br>EC2, S3, Lambda Func, Dynamodb etc. | [Docs](https://docs.aws.amazon.com/) | [Community](https://repost.aws/)
-| 2.  | [MongoDB](https://cloud.mongodb.com/) | [Billing]() | Atlas | [Docs]() | [Community]()
+| 2.  | [GCP]() | [Billing]() | [GCP Products]() | [Docs]() | [Community]()
+| 3.  | [MongoDB](https://cloud.mongodb.com/) | [Billing]() | Atlas | [Docs]() | [Community]()
 
 
 ## Services -
@@ -13,24 +14,25 @@
 | ID  | Service Name | Type | Pricing | Details | Docs |
 | --- | ------------ | ---- | ------- | ------- | ---- |
 | 1. | [Lambda Function]() | Data Pipeline | [Pricing]() | 1. Serverless pipeline | [Docs]() |
-| 2.  | [DynamoDB]() | Database | [Pricing](https://aws.amazon.com/dynamodb/pricing/) | 1. NoSQL, fully managed database | [Docs](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) |
+| 2.  | [DynamoDB]() | Database | [Pricing](https://aws.amazon.com/dynamodb/pricing/) | 1. NoSQL, Schemaless, fully managed database | 1. [Docs](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html) </br> 2. [Cheat Sheet](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CheatSheet.html) </br> 3. [Python SDK Sample](https://docs.aws.amazon.com/code-library/latest/ug/python_3_dynamodb_code_examples.html) |
 
 
 ## Extras -
---============================================</br>
--- AWS Lambda Function (fetch_store_daily_market_data)</br>
---============================================</br>
+--=================================== </br>
+-- AWS Lambda Function (fetch_store_daily_market_data) </br>
+--=================================== </br>
 1. Amazon Lambda Function
 2. Function name: fetch_store_daily_market_data
 3. Runtime: Python 3.13
 4. Architecture: x86_64
 5. Lambda will create an execution role with permissions to upload logs to Amazon CloudWatch Logs
-6. Create **Layer**
+6. Create **Layer** to install/add python packages
+7. after creating aws lambda function, go to "Configuration" and change "Timeout" to 30 sec. 
 
 
---============================================</br>
--- Amazon Dynamodb (daily_market_data)</br>
---============================================</br>
+--=================================== </br>
+-- Amazon Dynamodb (daily_market_data) </br>
+--=================================== </br>
 1. Table name: daily_market_data
 2. Partition key: market_date, string 
 3. Sort key - optional: market_type, string
@@ -41,5 +43,9 @@
 8. 
 
 
+
 1. What is Layer in Lambda function?
 2. What is amazondynamodbfullaccess vs amazondynamodbfullaccess v2?
+3. What is "M", "L", "B", "S" in dynamodb keys?
+4. Difference between boto3.resource('dynamodb').Table(dynamodb_table_name).scan and query?
+4. What is the differene between "client" and "resource" in boto3?
