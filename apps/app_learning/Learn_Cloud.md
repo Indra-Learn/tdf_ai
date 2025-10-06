@@ -27,6 +27,11 @@
 4. Architecture: x86_64
 5. Lambda will create an execution role with permissions to upload logs to Amazon CloudWatch Logs
 6. Create **Layer** to install/add python packages
+7. after creating aws lambda function, click "add trigger", 
+    1. Trigger configuration: EventBridge
+    2. Rule: Create new rule
+    3. rule name: 
+    4. rule type: Schedule expression
 7. after creating aws lambda function, go to "Configuration" and change "Timeout" to 30 sec. 
 
 
@@ -43,9 +48,13 @@
 8. 
 
 
+## Questions based on practical implementation:
 
 1. What is Layer in Lambda function?
 2. What is amazondynamodbfullaccess vs amazondynamodbfullaccess v2?
-3. What is "M", "L", "B", "S" in dynamodb keys?
+2. How to implement "idempotent" or handle not to insert same/duplicate data if same job has been triggered multiple times by mistake. Why we need to check Item_count should be greater than 0 to check there is already exist of same record?
+3. What is "M", "L", "B", "S" keys in dynamodb table?
 4. Difference between boto3.resource('dynamodb').Table(dynamodb_table_name).scan and query?
 4. What is the differene between "client" and "resource" in boto3?
+5. What is "*" and "?" in AWS EventBridge Cron syntax? 
+6. **Why You cannot specify both day-of-month and day-of-week in the same cron expression, so one must be "?" ?
