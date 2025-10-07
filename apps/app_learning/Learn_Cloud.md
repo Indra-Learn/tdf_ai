@@ -52,9 +52,12 @@
 
 1. What is Layer in Lambda function?
 2. What is amazondynamodbfullaccess vs amazondynamodbfullaccess v2?
-2. How to implement "idempotent" or handle not to insert same/duplicate data if same job has been triggered multiple times by mistake. Why we need to check Item_count should be greater than 0 to check there is already exist of same record?
+2. What is the difference between version and alias in aws lambda function?
+2. How to implement "idempotent" or handle not to insert same/duplicate data if same job has been triggered multiple times by mistake. Why we need to check dynamodb Item_count should be greater than 0 to check there is already exist of same record?
 3. What is "M", "L", "B", "S" keys in dynamodb table?
 4. Difference between boto3.resource('dynamodb').Table(dynamodb_table_name).scan and query?
 4. What is the differene between "client" and "resource" in boto3?
 5. What is "*" and "?" in AWS EventBridge Cron syntax? 
 6. **Why You cannot specify both day-of-month and day-of-week in the same cron expression, so one must be "?" ?
+7. What is "AWS Infrastructure Composer"? **https://docs.aws.amazon.com/infrastructure-composer/latest/dg/what-is-composer.html?icmpid=docs_console_unmapped
+8. What is "AWS Serverless Application Model (SAM)"? **https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html?icmpid=docs_console_unmapped
